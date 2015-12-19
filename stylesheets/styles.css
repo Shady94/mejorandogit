@@ -1,87 +1,161 @@
-<!DOCTYPE html> 
-<html lang="es">
-<head>
-<!-- Basic Page Needs
- ================================================== -->
-  <title>Ejercicio 1 Shady</title>
-  <meta charset="utf-8" />
-  <meta name="description" content="Mejorandogit - Cursos Mejorando.la">
-  <meta name="author" content="Mejorando.la" />
-  <meta name="robots" content="all">
+body
+{
+ background: rgb(51, 6, 10);
+ font-size: 25px;
+}
 
-<!-- Mobile Specific Metas
- ================================================== --> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+a
+{
+  text-decoration: none;
+}
 
-<!-- CSS
-  ================================================== -->
-  <link rel="stylesheet" href="stylesheets/normalize.css">
-  <link rel="stylesheet" href="stylesheets/styles.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+ul
+{
+  margin: 20% 0 0% 0%;
+}
 
-<!-- Favicons
-  ================================================== -->
+ul li
+{
+  list-style: none;
+}
 
-<link rel="shortcut icon" href="https://mejorando.la/static/images/favicon.ico">
-</head>
+ul li a
+{
+ text-decoration: none; 
+}
 
-<body>
+ul li a p
+{
+  width: 75%;
+  list-style-type: none;
+  background: #E94016;
+  border-bottom: solid thin white;
+  padding: .3em 1em .3em;
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+}
 
-  <header class="sidebar">
-    <section class="sidebar_information">
-      <div class="sidebar_userimage">
-         <!-- 1º Commit Tu nombre y foto -->
-        <img src="https://pbs.twimg.com/profile_images/677247536847978497/Gme-kqPu.jpg">
-        <h1 class="sidebar_information_title">
-          Jesus Garcia Ortega
-        </h1>
-      </div>
-      <div class="comunidad-autoria">
-        <div class="nombre">
-          <!-- 2º Commit - Tu perfil Web -->
-          <p>Desarrollador de aplicaciones moviles Android</p>
-        </div>
-      </div>
-    </section>
-    <ul>
-      <li>
-        <a href="https://www.facebook.com/jesus.garciaortega.16" target="_blank">
-          <!-- 3º Commit - Redes Sociales -->
-          <p>Facebook</p>
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com/JgoUach" target="_blank">
-          <p>Twitter</p>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/profile/view?id=AAIAABjMCzQBTcFdhS2uBbXGGJh8ZxP_uuQbuew&trk=nav_responsive_tab_profile_pic" target="_blank">
-          <p>LinkedIN</p>
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/Shady94" target="_blank">
-          <p>GitHub</p>
-        </a>
-      </li>
-    </ul>
-  </header>
 
-  <div class="layout-principal">
-    <div class="bloque">
-      <!-- 4º Commit - Tu presentación -->
-      <h3>¡Que tal!</h3>
-      <p>Un desarrollador de aplicaciones moviles Android apasionado por aprender cosas nuevas</p>
-    </div>
+h1
+{
+  padding-bottom: 2em;
+  border-bottom: none;
+  font-size: 16px;
+  margin: 0;
+  padding: 5px 0 .3em;
+  line-height: 32px;
+  text-align: center;
+  color: black;
+}
 
-    <div class="bloque">
-      <!-- 5º Commit - Tu portafolio -->
-      <h3>Tu portafolio</h3>
-      <a href="#"><p>Y aqui estaria mi portafolio, SI TUVIERA UNO T_T</p></a>
-    </div>
-  </div>
-    
-</body>
-</html>
+h3
+{
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 32px;
+  border-bottom: 1px #eee solid;
+  color: #FFF7F7;
+  margin-bottom: 2.5em;
+  padding-bottom: .5em;
+}
+
+header.sidebar
+{
+  background-color: #EEEEEE;
+  width: 30%;
+  background-size: cover;
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+}
+
+section.sidebar_information
+{
+  color: white;
+}
+
+div.sidebar_userimage
+{
+  cursor: pointer;
+  border-radius: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0% 35% 0;
+  padding: 8% 0 0;
+  text-align: center;
+
+}
+
+div.sidebar_userimage img
+{
+
+  border-radius: 26px;
+  width: 75px;
+  padding: 7px;
+  border: 1px solid #ccc; 
+}
+
+div.comunidad-autoria
+{
+  border-bottom: solid 1px white;
+  background: black;
+  border-top: solid 1px white;
+  padding: 3% 0;
+  margin: 12% 0;
+}
+
+div.logo
+{
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  padding: 3% 0 0;
+}
+
+div.logo img
+{
+  width: 45px;
+  border-radius: 45px;
+  padding: 0;
+  margin: 0;
+}
+
+div.nombre
+{
+display: inline-block;
+vertical-align: top;
+padding: 0;
+margin: 0% 33%;
+font-size: 15px;
+text-align: center;
+}
+
+div.nombre p
+{
+  color: rgb(255, 255, 255)
+}
+
+div.layout-principal
+{
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  bottom: 0;  
+  overflow-x: auto;
+  width: 55%;
+  padding: 0% 6.5%;
+}
+
+div.bloque
+{
+  margin: 5% 0 0;
+}
+
+div.bloque p
+{
+  color: rgb(255, 255, 255);
+  line-height: 1.9em;
+}
